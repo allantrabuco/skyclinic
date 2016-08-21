@@ -1,0 +1,163 @@
+/*
+ * File: app.js
+ */
+
+// @require @packageOverrides
+Ext.Loader.setConfig({
+
+});
+
+
+Ext.application({
+
+    requires: [
+        'Ext.DataView',
+        'Ext.draw.Color',
+        'Ext.chart.Legend',
+        'Ext.chart.Markers'
+    ],
+    models: [
+        'Advice',
+        'ChartExample',
+        'CivilState',
+        'ClientInsurances',
+        'ClientPhones',
+        'Clients',
+        'Federation',
+        'Insurance',
+        'InsurancesCombo',
+        'Message',
+        'MobileOperator',
+        'ProfPhones',
+        'ProfSpecialties',
+        'Settings',
+        'SpecialtiesCombo',
+        'TimeCombo',
+        'Professionals',
+        'Specialty',
+        'Procedure',
+        'Sex',
+        'Agendamento',
+        'Scheduling'
+    ],
+    stores: [
+        'Settings',
+        'store1',
+        'store2',
+        'store3',
+        'store4',
+        'store5',
+        'store6',
+        'Advice',
+        'CivilState',
+        'CliCombo',
+        'ClientInsurances',
+        'ClientPhones',
+        'Clients',
+        'Federation',
+        'Insurances',
+        'ClientInsurancesCombo',
+        'Messages',
+        'MobileOperator',
+        'ProfessionalPhones',
+        'ProfessionalSpecialties',
+        'SpecialtiesCombo',
+        'TimesBeginCombo',
+        'TimesEndCombo',
+        'Professionals',
+        'Specialties',
+        'Procedures',
+        'ProfessionalSpecialtiesCombo',
+        'Sex',
+        'Agendamentos',
+        'DiaryClientsCombo',
+        'ClientsWin',
+        'DiaryClientInsurancesCombo',
+        'DiarySettProceduresCombo'
+    ],
+    views: [
+        'MyViewport',
+        'BodyHeader',
+        'BodyFooter',
+        'Login',
+        'ViewportBody',
+        'MenuPanel',
+        'Welcome',
+        'UnderConstruction',
+        'SettingsWin',
+        'Clients',
+        'ClientsTab',
+        'ClientsList',
+        'ClientsGrid',
+        'ClientsInformationForm',
+        'ClientsAdditionalForm',
+        'ClientsPhonesForm',
+        'ClientsInsurancesForm',
+        'Calendar',
+        'AuxiliaryWin',
+        'ChartExamplesEx',
+        'ChartExamples1',
+        'Dashboard',
+        'Professionals',
+        'ProfessionalsTab',
+        'ProfessionalsList',
+        'ProfessionalsInformationForm',
+        'ProfessionalsAdditionalForm',
+        'Settings',
+        'SettingsTab',
+        'SettingsList',
+        'SettInsurancesForm',
+        'SettProceduresForm',
+        'SettSpecialtiesForm',
+        'WinAux',
+        'Diary',
+        'DiaryForm'
+    ],
+    controllers: [
+        'Login',
+        'BodyHeader',
+        'MenuPanel',
+        'Clients',
+        'ClientsGrid',
+        'ClientsList',
+        'Calendar',
+        'Global',
+        'Dashboard',
+        'ClientsInformationForm',
+        'ClientsPhonesForm',
+        'ClientsInsurancesForm',
+        'ClientsAdditionalForm',
+        'Professionals',
+        'Diary',
+        'Settings',
+        'SettingsInsurancesGrid',
+        'SettingsInsurancesList',
+        'ClientsInsurancesGrid',
+        'ClientsPhonesGrid',
+        'ProfessionalsGrid',
+        'ProfessionalsInformationForm',
+        'ProfessionalsSpecialtiesForm',
+        'ProfessionalsSpecialtiesGrid',
+        'SettingsSpecialtiesList',
+        'SettingsSpecialtiesGrid',
+        'SettingsProceduresList',
+        'SettingsProceduresGrid',
+        'ProfessionalsPhonesForm',
+        'ProfessionalsPhonesGrid',
+        'ProfessionalsList',
+        'DiaryForm'
+    ],
+    name: 'skyclinic',
+
+    requires: [
+        'Ext.DataView',
+        'Ext.draw.Color',
+        'Ext.chart.Legend',
+        'Ext.chart.Markers'
+    ],
+
+    launch: function() {
+        Ext.create('skyclinic.view.Login', {renderTo: Ext.getBody()});
+    }
+
+});
