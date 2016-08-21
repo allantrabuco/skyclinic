@@ -1,2 +1,2 @@
 # skyclinic
-SkyClinic V2
+SkyClinic V2 alpha
